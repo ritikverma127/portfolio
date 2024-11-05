@@ -10,7 +10,8 @@ const config: Config = {
     extend: {
       colors: {
         "background-nav":"#1a0b2e",
-        "backgroundfull":"#251c31"
+        "backgroundfull":"#251c31",
+        "text-name":"#7127ba"
       },
     },
   },
