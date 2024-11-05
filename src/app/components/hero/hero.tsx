@@ -13,7 +13,7 @@ function HeroSection() {
         </h1>
         <h3 className="text-white font-mono sm:mt-10 text-2xl">A Designer Who</h3>
         <h1 className="text-white font-mono sm:text-6xl">
-          Judges a book
+          Judges a bookssss
           <br />
           by its{" "} 
           <span className="relative inline-block">
