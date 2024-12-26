@@ -1,10 +1,10 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 
-export default function Navbr() {
+export default function Header() {
   return (
     <header className="bg-[#FFF5F5] px-4 py-4">
-      <div className="max-w-7xl mx-auto flex items-center justify-between bg-white p-6 rounded-lg">
+      <div className="max-w-7xl mx-auto flex items-center justify-between">
         <Link href="/" className="text-xl font-semibold">
           Mrstudio
         </Link>

@@ -1,9 +1,21 @@
-import Navbr from "@/components/Navbar";
+import BusinessSolution from "@/components/Business-solution";
+import CallToAction from "@/components/Call-to-action";
+import ExceptionalWork from "@/components/Exceptional-work";
+import Hero from "@/components/Hero";
+import Header from "@/components/Navbar";
+import RecentProjects from "@/components/Recent-Projects";
+import Services from "@/components/Services";
 
-export default function Portfolio() {
+export default function Home() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-pink-50 to-purple-50">
-      <Navbr />
-    </div>
+    <main className="bg-[#FFF5F5]">
+      <Header />
+      <Hero />
+      <Services />
+      <ExceptionalWork />
+      <BusinessSolution />
+      <RecentProjects />
+      <CallToAction />
+    </main>
   );
 }
