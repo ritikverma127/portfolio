@@ -54,7 +54,7 @@ export default function Hero() {
           {/* Shopify Badge */}
           <div className="absolute right-8 bottom-16 bg-white rounded-full p-2 shadow-lg">
             <Image
-              src="/placeholder.svg"
+              src="/main.png"
               alt="Shopify"
               width={40}
               height={40}
@@ -70,11 +70,29 @@ export default function Hero() {
           Work For All This Brand & Client
         </h3>
         <div className="grid grid-cols-2 md:grid-cols-5 gap-8">
-          {[1, 2, 3, 4, 5].map((i) => (
+          {[{
+            id:1,
+            img: `/Signimus.jpeg`,
+
+          },
+          {
+            id:2,
+            img: `/letsgrowmore.png`,
+          },
+          {
+            id:3,
+            img: `/Bharatintern.png`,
+          },
+          {
+            id:4,
+            img: `/letsgrowmore.png`,
+          },
+          
+        ].map((item,i) => (
             <div key={i} className="bg-white rounded-lg p-4 shadow-sm">
               <Image
-                src="/placeholder.svg"
-                alt={`Brand ${i}`}
+                src={item.img}
+                alt={`Brand`}
                 width={80}
                 height={40}
                 className="w-full h-auto object-contain"
