@@ -4,7 +4,7 @@ import { Award, Star } from "lucide-react";
 
 export default function Hero() {
   return (
-    <div className="relative min-h-screen bg-gradient-to-br from-[#FFF5F5] via-[#FFF5F5] to-[#E9D5FF] px-4 py-20">
+    <div className="relative min-h-screen bg-gradient-to-br from-[#FFF5F5] via-[#FFF5F5] to-[#E9D5FF] px-4 py-20 mt-24">
       {/* Decorative elements */}
       <div className="absolute top-20 right-20 w-4 h-4 rounded-full bg-red-500" />
       <div className="absolute top-40 right-40 w-4 h-4 rounded-full bg-blue-500" />
@@ -15,7 +15,7 @@ export default function Hero() {
           <h1 className="text-[#1E2B4F] text-5xl lg:text-6xl font-bold leading-tight">
             Hy! I Am
             <br />
-            Brunao Dev
+           Ritik Verma
           </h1>
 
           <p className="text-gray-600 max-w-lg">

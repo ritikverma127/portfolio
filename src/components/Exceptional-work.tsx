@@ -16,7 +16,7 @@ export default function ExceptionalWork() {
             <br />
             From Me
           </h2>
-          <p className="text-gray-600 max-w-lg">
+          <p className="text-gray-600 max-w-sm">
             Lorem ipsum is simply dummy text of the printing and typesetting
             industry. Lorem ipsum has been the industry.
           </p>
