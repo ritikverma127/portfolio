@@ -30,7 +30,7 @@ export default function Hero() {
 
         <div className="relative">
           {/* Award Badge */}
-          <div className="absolute top-4 right-4 bg-white rounded-xl p-3 shadow-lg flex items-center gap-2">
+          <div className="absolute top-64 right-4 bg-white rounded-xl p-3 shadow-lg flex items-center gap-2">
             <div className="bg-yellow-400 rounded-full p-2">
               <Award className="w-4 h-4 text-white" />
             </div>
@@ -52,13 +52,13 @@ export default function Hero() {
           </div>
 
           {/* Shopify Badge */}
-          <div className="absolute right-8 bottom-16 bg-white rounded-full p-2 shadow-lg">
+          <div className="absolute left-56 bottom-20  top-[-9.75rem]  h-42rem w-42rem ">
             <Image
-              src="/main.png"
+              src="/Skills.png"
               alt="Shopify"
-              width={40}
-              height={40}
-              className="rounded-full"
+              width={500}
+              height={500}
+              
             />
           </div>
         </div>

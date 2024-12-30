@@ -61,7 +61,7 @@ const Header = () => {
 
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
-          <nav className="fixed inset-0 bg-white z-40 flex justify-center items-center bg-red-50 fixed">
+          <nav className="fixed inset-0 bg-white z-40 flex justify-center items-center bg-red-50">
             <div className="flex flex-col gap-6 items-center">
               <a
                 href="/"
