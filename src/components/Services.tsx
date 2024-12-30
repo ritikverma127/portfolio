@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 
 export default function Services() {
   return (
-    <section className="py-24 px-4">
+    <section className="py-24 px-4" id="services">
       <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
         <div className="space-y-6">
           <div className="space-y-4 bg-white rounded-xl p-6 shadow-sm">

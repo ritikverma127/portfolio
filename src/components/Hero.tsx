@@ -4,21 +4,22 @@ import { Award, Star } from "lucide-react";
 
 export default function Hero() {
   return (
-    <div className="relative min-h-screen bg-gradient-to-br from-[#FFF5F5] via-[#FFF5F5] to-[#E9D5FF] px-4 py-20 mt-24">
+    <div className="relative min-h-screen bg-gradient-to-br from-[#FFF5F5] via-[#FFF5F5] to-[#E9D5FF] px-4 py-20 mt-24 pt-32 " id="home">
       {/* Decorative elements */}
       <div className="absolute top-20 right-20 w-4 h-4 rounded-full bg-red-500" />
       <div className="absolute top-40 right-40 w-4 h-4 rounded-full bg-blue-500" />
       <div className="absolute top-60 left-40 w-4 h-4 rounded-full bg-green-500" />
 
-      <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
+      <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-14 items-center">
         <div className="space-y-6">
-          <h1 className="text-[#1E2B4F] text-5xl lg:text-6xl font-bold leading-tight">
+          <h1 className="text-[#1E2B4F] text-6xl lg:text-6xl font-bold leading-tight">
             Hy! I Am
             <br />
            Ritik Verma
           </h1>
+<div className="pt-12 space-y-6">
 
-          <p className="text-gray-600 max-w-lg">
+          <p className="text-gray-600 max-w-lg text-2xl">
             Product designer and digital creative director working in design
             field for 7 years so far, specialize user interface design.
           </p>
@@ -26,6 +27,7 @@ export default function Hero() {
           <Button className="bg-[#F15A2B] hover:bg-[#d94d22] text-white px-8 py-6 text-lg">
             Hire Me
           </Button>
+</div>
         </div>
 
         <div className="relative">
@@ -52,7 +54,7 @@ export default function Hero() {
           </div>
 
           {/* Shopify Badge */}
-          <div className="absolute left-[9rem] bottom-20  top-[-8.75rem]  h-42rem w-42rem ">
+          <div className="absolute left-[7rem] bottom-20  top-[-8.75rem]  h-42rem w-42rem ">
             <Image
               src="/Skills.png"
               alt="Shopify"
@@ -65,7 +67,7 @@ export default function Hero() {
       </div>
 
       {/* Brands Section */}
-      <div className="max-w-7xl mx-auto mt-36">
+      {/* <div className="max-w-7xl mx-auto mt-36">
         <h3 className="text-[#1E2B4F] font-semibold mb-8">
           Work For All This Brand & Client
         </h3>
@@ -100,7 +102,7 @@ export default function Hero() {
             </div>
           ))}
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }

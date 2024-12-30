@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Menu, X } from 'lucide-react';
+import Link from 'next/link';
 
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -16,24 +17,32 @@ const Header = () => {
           </a>
 
           <nav className="flex items-center gap-8">
-            <a
-              href="/"
+            <Link
+              href="#home"
               className="text-sm hover:text-gray-600 transition-colors"
-            >
+              >
               Home
-            </a>
-            <a
-              href="#"
-              className="text-sm hover:text-gray-600 transition-colors"
-            >
-              About Us
-            </a>
-            <a
-              href="#"
+            </Link>
+            <Link
+              href="#services"
               className="text-sm hover:text-gray-600 transition-colors"
             >
               Services
-            </a>
+            </Link>
+            <Link
+              href="#clients"
+              className="text-sm hover:text-gray-600 transition-colors"
+            >
+              Clients
+            </Link>
+           
+            <Link
+              href="#projects"
+           className="text-sm hover:text-gray-600 transition-colors"
+            >
+              Projects
+            </Link>
+
             <Button
               asChild
               className="bg-orange-500 hover:bg-orange-600 text-white rounded-md"

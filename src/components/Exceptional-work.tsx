@@ -3,7 +3,7 @@ import { Shield } from "lucide-react";
 
 export default function ExceptionalWork() {
   return (
-    <section className="py-24 px-4 relative">
+    <section className="py-24 px-4 relative" id="clients">
       <div className="absolute top-20 right-20 w-4 h-4 rounded-full bg-red-500" />
       <div className="absolute bottom-20 left-20 w-4 h-4 rounded-full bg-blue-500" />
 
