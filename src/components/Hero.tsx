@@ -1,108 +1,99 @@
-import Image from "next/image";
+'use client';
+
+import { useState, useEffect } from 'react';
 import { Button } from "@/components/ui/button";
 import { Award, Star } from "lucide-react";
+import { FlipWords } from "@/components/ui/flip-words";
+import IconCloud from "@/components/ui/icon-cloud";
 
 export default function Hero() {
+  const [isMounted, setIsMounted] = useState(false);
+
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
+
+  const slugs = [
+    "typescript", "javascript", "dart", "java", "react", "flutter", "android",
+    "html5", "css3", "nodedotjs", "express", "nextdotjs", "prisma", "amazonaws",
+    "postgresql", "firebase", "nginx", "vercel", "testinglibrary", "jest",
+    "cypress", "docker", "git", "jira", "github", "gitlab", "visualstudiocode",
+    "androidstudio", "sonarqube", "figma"
+  ];
+   
+  const words = [
+    "Passionate developer skilled in React, Next.js, and Tailwind CSS. I craft visually stunning, user-friendly applications that deliver seamless experiences.",
+  ];
+
   return (
-    <div className="relative min-h-screen bg-gradient-to-br from-[#FFF5F5] via-[#FFF5F5] to-[#E9D5FF] px-4 py-20 mt-24 pt-32 " id="home">
-      {/* Decorative elements */}
-      <div className="absolute top-20 right-20 w-4 h-4 rounded-full bg-red-500" />
-      <div className="absolute top-40 right-40 w-4 h-4 rounded-full bg-blue-500" />
-      <div className="absolute top-60 left-40 w-4 h-4 rounded-full bg-green-500" />
+    <section className="relative min-h-screen bg-gradient-to-br from-[#FFF5F5] via-[#FFF5F5] to-[#E9D5FF] px-4 sm:px-6 lg:px-8" id="home">
+      {/* Decorative dots with adjusted positioning - only shown after client-side mount */}
+      {isMounted && (
+        <>
+          <div className="absolute top-20 right-[15%] w-2.5 h-2.5 rounded-full bg-red-500 animate-pulse" />
+          <div className="absolute top-40 right-[25%] w-2.5 h-2.5 rounded-full bg-blue-500 animate-pulse" />
+          <div className="absolute top-32 left-[20%] w-2.5 h-2.5 rounded-full bg-green-500 animate-pulse" />
+        </>
+      )}
 
-      <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-14 items-center">
-        <div className="space-y-6">
-          <h1 className="text-[#1E2B4F] text-6xl lg:text-6xl font-bold leading-tight">
-            Hy! I Am
+      <div className="max-w-7xl mx-auto min-h-[calc(100vh-4rem)] flex flex-col lg:flex-row items-center justify-center gap-8 lg:gap-12 py-16 lg:py-20">
+        {/* Left Content Section */}
+        <div className="flex-1 space-y-6 lg:space-y-8 text-center lg:text-left">
+          <h1 className="text-[#1E2B4F] text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight">
+            Hi! I Am
             <br />
-           Ritik Verma
+            Ritik Verma
           </h1>
-<div className="pt-12 space-y-6">
+          
+          <div className="space-y-6 lg:space-y-8">
+            {isMounted && (
+              <h2 className="text-gray-600 max-w-xl text-lg sm:text-xl lg:text-2xl">
+                <FlipWords words={words} />
+              </h2>
+            )}
 
-          <p className="text-gray-600 max-w-lg text-2xl">
-            Product designer and digital creative director working in design
-            field for 7 years so far, specialize user interface design.
-          </p>
-
-          <Button className="bg-[#F15A2B] hover:bg-[#d94d22] text-white px-8 py-6 text-lg">
-            Hire Me
-          </Button>
-</div>
+            <Button className="bg-[#F15A2B] hover:bg-[#d94d22] text-white px-6 sm:px-8 py-5 sm:py-6 text-base sm:text-lg transition-all duration-300 hover:scale-105">
+              Hire Me
+            </Button>
+          </div>
         </div>
 
-        <div className="relative">
-          {/* Award Badge */}
-          <div className="absolute top-64 right-4 bg-white rounded-xl p-3 shadow-lg flex items-center gap-2">
-            <div className="bg-yellow-400 rounded-full p-2">
-              <Award className="w-4 h-4 text-white" />
-            </div>
-            <div className="text-sm">
-              <p className="font-semibold">Best Design</p>
-              <p className="text-gray-600">Awards</p>
-            </div>
-          </div>
+        {/* Right Content Section */}
+        <div className="flex-1 relative w-full min-h-[400px] lg:min-h-[500px]">
+          {isMounted && (
+            <>
+              {/* Award Badge */}
+              <div className="absolute top-0 right-8 bg-white rounded-lg p-2.5 shadow-md flex items-center gap-2 hover:scale-105 transition-transform">
+                <div className="bg-yellow-400 rounded-full p-2">
+                  <Award className="w-4 h-4 text-white" />
+                </div>
+                <div>
+                  <p className="font-semibold text-sm">Best Design</p>
+                  <p className="text-gray-600 text-xs">Awards</p>
+                </div>
+              </div>
 
-          {/* UI/UX Badge */}
-          <div className="absolute bottom-32 left-0 bg-white rounded-xl p-3 shadow-lg flex items-center gap-2">
-            <div className="bg-green-400 rounded-full p-2">
-              <Star className="w-4 h-4 text-white" />
-            </div>
-            <div className="text-sm">
-              <p className="font-semibold">UI/UX</p>
-              <p className="text-gray-600">Lorem ipsum dummy</p>
-            </div>
-          </div>
+              {/* UI/UX Badge */}
+              <div className="absolute bottom-4 left-8 bg-white rounded-lg p-2.5 shadow-md flex items-center gap-2 hover:scale-105 transition-transform">
+                <div className="bg-green-400 rounded-full p-2">
+                  <Star className="w-4 h-4 text-white" />
+                </div>
+                <div>
+                  <p className="font-semibold text-sm">UI/UX</p>
+                  <p className="text-gray-600 text-xs">Expert Design</p>
+                </div>
+              </div>
 
-          {/* Shopify Badge */}
-          <div className="absolute left-[7rem] bottom-20  top-[-8.75rem]  h-42rem w-42rem ">
-            <Image
-              src="/Skills.png"
-              alt="Shopify"
-              width={500}
-              height={500}
-              
-            />
-          </div>
+              {/* Icon Cloud */}
+              <div className="absolute inset-0 flex items-center justify-center mt-12 lg:mt-0">
+                <div className="w-full max-w-lg overflow-hidden  rounded-lg px-4 sm:px-6 lg:px-8 py-8 lg:py-12">
+                  <IconCloud iconSlugs={slugs} />
+                </div>
+              </div>
+            </>
+          )}
         </div>
       </div>
-
-      {/* Brands Section */}
-      {/* <div className="max-w-7xl mx-auto mt-36">
-        <h3 className="text-[#1E2B4F] font-semibold mb-8">
-          Work For All This Brand & Client
-        </h3>
-        <div className="grid grid-cols-2 md:grid-cols-5 gap-8">
-          {[{
-            id:1,
-            img: `/Signimus.jpeg`,
-
-          },
-          {
-            id:2,
-            img: `/letsgrowmore.png`,
-          },
-          {
-            id:3,
-            img: `/Bharatintern.png`,
-          },
-          {
-            id:4,
-            img: `/letsgrowmore.png`,
-          },
-          
-        ].map((item,i) => (
-            <div key={i} className="bg-white rounded-lg p-4 shadow-sm">
-              <Image
-                src={item.img}
-                alt={`Brand`}
-                width={80}
-                height={40}
-                className="w-full h-auto object-contain"
-              />
-            </div>
-          ))}
-        </div>
-      </div> */}
-    </div>
+    </section>
   );
 }

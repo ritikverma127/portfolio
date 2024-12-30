@@ -12,33 +12,33 @@ const Header = () => {
       {/* Desktop Header */}
       <header className="fixed top-0 left-0 right-0 z-50 bg-red-50 px-4 py-4 hidden sm:block">
         <div className="max-w-7xl mx-auto flex items-center justify-between bg-white rounded-xl p-6">
-          <h1 className="text-xl font-semibold">
+          <h1 className="text-2xl font-semibold text-purple-600">
             Mr. Developer
           </h1>
 
           <nav className="flex items-center gap-8">
             <Link
               href="#home"
-              className="text-sm hover:text-gray-600 transition-colors"
-              >
+              className="text-sm hover:text-gray-600 transition-colors font-bold"
+            >
               Home
             </Link>
             <Link
               href="#services"
-              className="text-sm hover:text-gray-600 transition-colors"
+              className="text-sm hover:text-gray-600 transition-colors font-bold"
             >
               Services
             </Link>
             <Link
               href="#clients"
-              className="text-sm hover:text-gray-600 transition-colors"
+              className="text-sm hover:text-gray-600 transition-colors font-bold"
             >
               Clients
             </Link>
            
             <Link
               href="#projects"
-           className="text-sm hover:text-gray-600 transition-colors"
+           className="text-sm hover:text-gray-600 transition-colors font-bold"
             >
               Projects
             </Link>

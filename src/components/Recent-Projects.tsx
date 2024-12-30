@@ -1,18 +1,23 @@
+import { url } from "inspector";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function RecentProjects() {
   const projects = [
     {
       title: "Gugli Tech",
       image: "/Guglitech.png",
+      url:"https://www.gugli.in/"
     },
     {
       title: "Resume Generator",
       image: "/ResumeGenerator.png",
+      url:"https://www.gugli.in/"
     },
     {
       title: "Digital Art",
       image: "/teamwork.jpg",
+      url:"https://www.gugli.in/"
     },
   ];
 
@@ -29,6 +34,7 @@ export default function RecentProjects() {
               key={project.title}
               className="group relative overflow-hidden rounded-2xl"
             >
+              <Link href={project.url}>
               <Image
                 src={project.image}
                 alt={project.title}
@@ -43,6 +49,7 @@ export default function RecentProjects() {
                   </h3>
                 </div>
               </div>
+              </Link>
             </div>
           ))}
         </div>
