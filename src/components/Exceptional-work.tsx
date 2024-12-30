@@ -53,7 +53,7 @@ export default function ExceptionalWork() {
           </div>
 
           <Image
-            src="/placeholder.svg"
+            src="/exceptional.png"
             alt="Professional in orange sweater"
             width={600}
             height={600}

@@ -3,16 +3,16 @@ import Image from "next/image";
 export default function RecentProjects() {
   const projects = [
     {
-      title: "Lighthouse View",
-      image: "/placeholder.svg",
+      title: "Gugli Tech",
+      image: "/Guglitech.png",
     },
     {
-      title: "Bryan Lane",
-      image: "/placeholder.svg",
+      title: "Resume Generator",
+      image: "/ResumeGenerator.png",
     },
     {
       title: "Digital Art",
-      image: "/placeholder.svg",
+      image: "/teamwork.jpg",
     },
   ];
 

@@ -1,4 +1,4 @@
-import BusinessSolution from "@/components/Business-solution";
+// import BusinessSolution from "@/components/Business-solution";
 import CallToAction from "@/components/Call-to-action";
 import ExceptionalWork from "@/components/Exceptional-work";
 import Hero from "@/components/Hero";
@@ -13,7 +13,7 @@ export default function Home() {
       <Hero />
       <Services />
       <ExceptionalWork />
-      <BusinessSolution />
+      {/* <BusinessSolution /> */}
       <RecentProjects />
       <CallToAction />
     </main>

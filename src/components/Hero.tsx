@@ -41,7 +41,7 @@ export default function Hero() {
           </div>
 
           {/* UI/UX Badge */}
-          <div className="absolute bottom-32 left-4 bg-white rounded-xl p-3 shadow-lg flex items-center gap-2">
+          <div className="absolute bottom-32 left-0 bg-white rounded-xl p-3 shadow-lg flex items-center gap-2">
             <div className="bg-green-400 rounded-full p-2">
               <Star className="w-4 h-4 text-white" />
             </div>
@@ -52,7 +52,7 @@ export default function Hero() {
           </div>
 
           {/* Shopify Badge */}
-          <div className="absolute left-56 bottom-20  top-[-9.75rem]  h-42rem w-42rem ">
+          <div className="absolute left-[9rem] bottom-20  top-[-8.75rem]  h-42rem w-42rem ">
             <Image
               src="/Skills.png"
               alt="Shopify"
@@ -65,7 +65,7 @@ export default function Hero() {
       </div>
 
       {/* Brands Section */}
-      <div className="max-w-7xl mx-auto mt-20">
+      <div className="max-w-7xl mx-auto mt-36">
         <h3 className="text-[#1E2B4F] font-semibold mb-8">
           Work For All This Brand & Client
         </h3>
