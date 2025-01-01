@@ -42,7 +42,7 @@ export default function ExceptionalWork() {
         </div>
 
         <div className="relative">
-          <div className="absolute -top-4 left-4 bg-white rounded-xl p-3 shadow-lg flex items-center gap-2">
+          <div className="absolute -top-4 left-4 bg-white rounded-xl p-1 sm:p-3 shadow-lg flex items-center gap-2">
             <div className="bg-green-400 rounded-full p-2">
               <Shield className="w-4 h-4 text-white" />
             </div>
