@@ -12,7 +12,7 @@ export default function Hero() {
   useEffect(() => {
     setIsMounted(true);
   }, []);
-
+``
   const slugs = [
     "typescript", "javascript", "dart", "java", "react", "flutter", "android",
     "html5", "css3", "nodedotjs", "express", "nextdotjs", "prisma", "amazonaws",
