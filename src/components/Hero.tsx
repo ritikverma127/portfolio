@@ -20,7 +20,7 @@ export default function Hero() {
     "cypress", "docker", "git", "jira", "github", "gitlab", "visualstudiocode",
     "androidstudio", "sonarqube", "figma"
   ];
-   
+
   const words = [
     "Passionate developer skilled in React, Next.js, and Tailwind CSS. I craft visually stunning, user-friendly applications that deliver seamless experiences.",
   ];
@@ -44,15 +44,15 @@ export default function Hero() {
             <br />
             Ritik Verma
           </h1>
-          
-          <div className="space-y-6 lg:space-y-8">
+
+          <div className="space-y-6 lg:space-y-8 flex flex-col items-start">
             {isMounted && (
               <h2 className="text-gray-600 max-w-xl text-lg sm:text-xl lg:text-2xl">
                 <FlipWords words={words} />
               </h2>
             )}
 
-            <Button className="bg-[#F15A2B] hover:bg-[#d94d22] text-white px-6 sm:px-8 py-5 sm:py-6 text-base sm:text-lg transition-all duration-300 hover:scale-105">
+            <Button className="px-4 py-3   bg-[#F15A2B] hover:bg-[#d94d22] text-white  sm:px-8 sm:py-6 text-base sm:text-lg transition-all duration-300 hover:scale-105">
               Hire Me
             </Button>
           </div>
@@ -63,8 +63,8 @@ export default function Hero() {
           {isMounted && (
             <>
               {/* Award Badge */}
-              <div className="absolute top-0 right-8 bg-white rounded-lg p-2.5 shadow-md flex items-center gap-2 hover:scale-105 transition-transform">
-                <div className="bg-yellow-400 rounded-full p-2">
+              <div className="absolute top-0 right-8 bg-white rounded-lg p-1 sm:p-2 shadow-md flex items-center gap-2 hover:scale-105 transition-transform">
+                <div className="bg-yellow-400 rounded-full p-1 sm:p-2">
                   <Award className="w-4 h-4 text-white" />
                 </div>
                 <div>
@@ -74,7 +74,7 @@ export default function Hero() {
               </div>
 
               {/* UI/UX Badge */}
-              <div className="absolute bottom-4 left-8 bg-white rounded-lg p-2.5 shadow-md flex items-center gap-2 hover:scale-105 transition-transform">
+              <div className="absolute bottom-4 left-0 mb-[-60px] sm:mb-0 bg-white rounded-lg p-1 sm:p-3 shadow-md flex items-center gap-2 hover:scale-105 transition-transform">
                 <div className="bg-green-400 rounded-full p-2">
                   <Star className="w-4 h-4 text-white" />
                 </div>

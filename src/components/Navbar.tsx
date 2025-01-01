@@ -54,7 +54,7 @@ const Header = () => {
       </header>
 
       {/* Mobile Header */}
-      <header className="fixed top-0 left-0 right-0 z-50 bg-red-50 px-4 py-4 sm:hidden">
+      <header className="fixed top-0 left-0 overflow-y-auto right-0 z-50 bg-red-50 px-4 py-4 sm:hidden">
         {/* Header Bar - Always visible */}
         <div className="relative z-50 max-w-7xl mx-auto flex items-center justify-between bg-white rounded-xl p-6">
           <h1  className="text-xl font-semibold">
@@ -73,19 +73,19 @@ const Header = () => {
           <nav className="fixed inset-0 bg-white z-40 flex justify-center items-center ">
             <div className="flex flex-col gap-6 items-center">
               <Link
-                href="/"
+                href="#home"
                 className="text-2xl font-bold hover:text-gray-600 transition-colors px-4 py-2"
               >
                 Home
               </Link>
               <Link
-                href="#"
+                href="#about"
                 className="text-2xl font-bold hover:text-gray-600 transition-colors px-4 py-2"
               >
                 About Us
               </Link>
               <Link
-                href="#"
+                href="#services"
                 className="text-2xl font-bold hover:text-gray-600 transition-colors px-4 py-2"
               >
                 Services
