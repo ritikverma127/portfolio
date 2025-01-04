@@ -10,10 +10,12 @@ export default function Services() {
             <div className="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center">
               <Code className="w-6 h-6 text-[#F15A2B]" />
             </div>
-            <h3 className="text-xl font-semibold text-[#1E2B4F]">Developer</h3>
-            <p className="text-gray-600">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-              eiusmod tempor incididunt.
+            <h3 className="text-xl sm:text-2xl font-semibold text-[#386dff]">
+              Frontend
+            </h3>
+            <p className="text-gray-600 font-bold">
+              The frontend is the visual and interactive part of a website or
+              application that users directly interact with.
             </p>
           </div>
 
@@ -21,10 +23,12 @@ export default function Services() {
             <div className="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center">
               <Smartphone className="w-6 h-6 text-[#F15A2B]" />
             </div>
-            <h3 className="text-xl font-semibold text-[#1E2B4F]">UI/UX</h3>
-            <p className="text-gray-600">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-              eiusmod tempor incididunt.
+            <h3 className="text-xl sm:text-2xl font-semibold text-[#386dff]">
+              Backend
+            </h3>
+            <p className="text-gray-600 font-bold">
+              The backend is the server-side part of a website or application
+              that handles data processing and database interactions.
             </p>
           </div>
 
@@ -32,10 +36,12 @@ export default function Services() {
             <div className="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center">
               <Palette className="w-6 h-6 text-[#F15A2B]" />
             </div>
-            <h3 className="text-xl font-semibold text-[#1E2B4F]">Design</h3>
-            <p className="text-gray-600">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-              eiusmod tempor incididunt.
+            <h3 className="text-xl sm:text-2xl font-semibold text-[#386dff]">
+              Database
+            </h3>
+            <p className="text-gray-600 font-bold">
+              A database is a collection of structured information that is
+              organized to enable efficient storage and retrieval of data.
             </p>
           </div>
         </div>
@@ -46,13 +52,13 @@ export default function Services() {
             <span className="text-[#F15A2B]"> Services</span>
           </h2>
           <p className="text-gray-600 max-w-lg">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            As a skilled full-stack developer, I specialize in creating dynamic,
+            responsive, and user-friendly applications. From stunning frontend
+            designs to robust backend solutions and optimized databases.
           </p>
           <p className="text-gray-600 max-w-lg">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco.
+            My expertise guarantees tailored solutions that meet your needs,
+            delivering excellence and innovation for your business success! 🚀
           </p>
           <Button className="bg-[#F15A2B] hover:bg-[#d94d22] text-white px-8">
             Hire CV

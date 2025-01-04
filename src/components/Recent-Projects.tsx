@@ -24,7 +24,7 @@ export default function RecentProjects() {
     <section className="py-24 px-4" id="projects">
       <div className="max-w-7xl mx-auto space-y-12">
         <h2 className="text-4xl font-bold text-center text-[#1E2B4F]">
-          Recent Project
+          Recent <span className="text-[#F15A2B]"> Projects</span>
         </h2>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">

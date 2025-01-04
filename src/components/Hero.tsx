@@ -1,6 +1,6 @@
-'use client';
+"use client";
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Award, Star } from "lucide-react";
 import { FlipWords } from "@/components/ui/flip-words";
@@ -14,11 +14,36 @@ export default function Hero() {
   }, []);
 
   const slugs = [
-    "typescript", "javascript", "dart", "java", "react", "flutter", "android",
-    "html5", "css3", "nodedotjs", "express", "nextdotjs", "prisma", "amazonaws",
-    "postgresql", "firebase", "nginx", "vercel", "testinglibrary", "jest",
-    "cypress", "docker", "git", "jira", "github", "gitlab", "visualstudiocode",
-    "androidstudio", "sonarqube", "figma"
+    "typescript",
+    "javascript",
+    "dart",
+    "java",
+    "react",
+    "flutter",
+    "android",
+    "html5",
+    "css3",
+    "nodedotjs",
+    "express",
+    "nextdotjs",
+    "prisma",
+    "amazonaws",
+    "postgresql",
+    "firebase",
+    "nginx",
+    "vercel",
+    "testinglibrary",
+    "jest",
+    "cypress",
+    "docker",
+    "git",
+    "jira",
+    "github",
+    "gitlab",
+    "visualstudiocode",
+    "androidstudio",
+    "sonarqube",
+    "figma",
   ];
 
   const words = [
@@ -26,7 +51,10 @@ export default function Hero() {
   ];
 
   return (
-    <section className="relative min-h-screen bg-gradient-to-br from-[#FFF5F5] via-[#FFF5F5] to-[#E9D5FF] px-4 sm:px-6 lg:px-8" id="home">
+    <section
+      className="relative min-h-screen bg-gradient-to-br from-[#FFF5F5] via-[#FFF5F5] to-[#E9D5FF] px-4 sm:px-6 lg:px-8"
+      id="home"
+    >
       {/* Decorative dots with adjusted positioning - only shown after client-side mount */}
       {isMounted && (
         <>
@@ -53,7 +81,7 @@ export default function Hero() {
             )}
 
             <Button className="px-4 py-3   bg-[#F15A2B] hover:bg-[#d94d22] text-white  sm:px-8 sm:py-6 text-base sm:text-lg transition-all duration-300 hover:scale-105">
-              Hire Me
+              Explore More
             </Button>
           </div>
         </div>
