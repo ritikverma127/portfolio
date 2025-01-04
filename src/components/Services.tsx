@@ -1,4 +1,4 @@
-import { Code, Palette, Smartphone } from "lucide-react";
+import { Code, Database, Smartphone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export default function Services() {
@@ -8,7 +8,7 @@ export default function Services() {
         <div className="space-y-6">
           <div className="space-y-4 bg-white rounded-xl p-6 shadow-sm">
             <div className="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center">
-              <Code className="w-6 h-6 text-[#F15A2B]" />
+              <Smartphone className="w-6 h-6 text-[#F15A2B]" />
             </div>
             <h3 className="text-xl sm:text-2xl font-semibold text-[#386dff]">
               Frontend
@@ -21,7 +21,7 @@ export default function Services() {
 
           <div className="space-y-4 bg-white rounded-xl p-6 shadow-sm">
             <div className="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center">
-              <Smartphone className="w-6 h-6 text-[#F15A2B]" />
+              <Code className="w-6 h-6 text-[#F15A2B]" />
             </div>
             <h3 className="text-xl sm:text-2xl font-semibold text-[#386dff]">
               Backend
@@ -34,7 +34,8 @@ export default function Services() {
 
           <div className="space-y-4 bg-white rounded-xl p-6 shadow-sm">
             <div className="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center">
-              <Palette className="w-6 h-6 text-[#F15A2B]" />
+              {/* <Palette className="w-6 h-6 text-[#F15A2B]" /> */}
+              <Database className="w-6 h-6 text-[#F15A2B]" />
             </div>
             <h3 className="text-xl sm:text-2xl font-semibold text-[#386dff]">
               Database
