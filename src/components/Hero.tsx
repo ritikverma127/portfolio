@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Award, Star } from "lucide-react";
 import { FlipWords } from "@/components/ui/flip-words";
 import IconCloud from "@/components/ui/icon-cloud";
+import Link from "next/link";
 
 export default function Hero() {
   const [isMounted, setIsMounted] = useState(false);
@@ -79,10 +80,11 @@ export default function Hero() {
                 <FlipWords words={words} />
               </h2>
             )}
-
-            <Button className="px-4 py-3   bg-[#F15A2B] hover:bg-[#d94d22] text-white  sm:px-8 sm:py-6 text-base sm:text-lg transition-all duration-300 hover:scale-105">
-              Explore More
-            </Button>
+            <Link href="#projects">
+              <Button className="px-4 py-3   bg-[#F15A2B] hover:bg-[#d94d22] text-white  sm:px-8 sm:py-6 text-base sm:text-lg transition-all duration-300 hover:scale-105">
+                Explore More
+              </Button>
+            </Link>
           </div>
         </div>
 

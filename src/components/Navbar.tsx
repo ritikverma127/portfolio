@@ -57,7 +57,9 @@ const Header = () => {
       <header className="fixed top-0 left-0  right-0 z-50 bg-red-50 px-4 py-4 sm:hidden">
         {/* Header Bar - Always visible */}
         <div className="relative z-50 max-w-7xl mx-auto flex items-center justify-between bg-white rounded-xl p-6">
-          <h1 className="text-xl font-semibold">Mr. Developer✨</h1>
+          <h1 className="text-xl font-semibold text-purple-600">
+            Mr. Developer✨
+          </h1>
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             className="relative z-50"
@@ -77,16 +79,22 @@ const Header = () => {
                 Home
               </Link>
               <Link
-                href="#about"
-                className="text-2xl font-bold hover:text-gray-600 transition-colors px-4 py-2"
-              >
-                About Us
-              </Link>
-              <Link
                 href="#services"
                 className="text-2xl font-bold hover:text-gray-600 transition-colors px-4 py-2"
               >
                 Services
+              </Link>
+              <Link
+                href="#clients"
+                className="text-2xl font-bold hover:text-gray-600 transition-colors px-4 py-2"
+              >
+                Clients
+              </Link>
+              <Link
+                href="#projects"
+                className="text-2xl font-bold hover:text-gray-600 transition-colors px-4 py-2"
+              >
+                Projects
               </Link>
               <Button
                 asChild
