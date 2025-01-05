@@ -1,7 +1,17 @@
+"use client";
 import { Code, Database, Smartphone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export default function Services() {
+  const DownloadResume = () => {
+    const pdfUrl = "Ritik-Resume-127.pdf";
+    const link = document.createElement("a");
+    link.href = pdfUrl;
+    link.download = "Ritik-Resume-127.pdf"; // specify the filename
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
   return (
     <section className="py-24 px-4" id="services">
       <div className="max-w-7xl mx-auto flex flex-col-reverse  lg:grid  lg:grid-cols-2 gap-12 items-center">
@@ -61,7 +71,10 @@ export default function Services() {
             My expertise guarantees tailored solutions that meet your needs,
             delivering excellence and innovation for your business success! 🚀
           </p>
-          <Button className="bg-[#F15A2B] hover:bg-[#d94d22] text-white px-8">
+          <Button
+            className="bg-[#F15A2B] hover:bg-[#d94d22] text-white px-8"
+            onClick={DownloadResume}
+          >
             Hire CV
           </Button>
         </div>
