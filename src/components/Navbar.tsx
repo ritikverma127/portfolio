@@ -43,12 +43,12 @@ const Header = () => {
               Projects
             </Link>
 
-            <Button
+            {/* <Button
               asChild
               className="bg-orange-500 hover:bg-orange-600 text-white rounded-md"
             >
               <Link href="/contact">Contact Us</Link>
-            </Button>
+            </Button> */}
           </nav>
         </div>
       </header>
@@ -96,12 +96,12 @@ const Header = () => {
               >
                 Projects
               </Link>
-              <Button
+              {/* <Button
                 asChild
                 className="bg-orange-500 hover:bg-orange-600 text-white rounded-md w-full text-2xl font-bold"
               >
                 <Link href="/contact">Contact Us</Link>
-              </Button>
+              </Button> */}
             </div>
           </nav>
         )}
