@@ -1,6 +1,5 @@
 "use client";
 import React, { useState } from "react";
-import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import Link from "next/link";
 
@@ -42,13 +41,6 @@ const Header = () => {
             >
               Projects
             </Link>
-
-            {/* <Button
-              asChild
-              className="bg-orange-500 hover:bg-orange-600 text-white rounded-md"
-            >
-              <Link href="/contact">Contact Us</Link>
-            </Button> */}
           </nav>
         </div>
       </header>
@@ -96,12 +88,6 @@ const Header = () => {
               >
                 Projects
               </Link>
-              {/* <Button
-                asChild
-                className="bg-orange-500 hover:bg-orange-600 text-white rounded-md w-full text-2xl font-bold"
-              >
-                <Link href="/contact">Contact Us</Link>
-              </Button> */}
             </div>
           </nav>
         )}
