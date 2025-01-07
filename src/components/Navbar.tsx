@@ -20,7 +20,7 @@ const Header = () => {
               href="#home"
               className="text-sm hover:text-gray-600 transition-colors font-bold"
             >
-              Home
+              Title
             </Link>
             <Link
               href="#services"
