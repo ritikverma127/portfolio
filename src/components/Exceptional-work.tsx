@@ -12,7 +12,7 @@ export default function ExceptionalWork() {
         <div className="space-y-8">
           <h2 className="text-4xl font-bold text-[#1E2B4F]">Contact Us</h2>
           <p className="text-gray-600 max-w-sm">
-            Available for new projects and collaborations. Let's create
+            Available for new projects and collaborations. Let&apos;s create
             something amazing together.
           </p>
 
