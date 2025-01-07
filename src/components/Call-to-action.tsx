@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { MessageCircle } from "lucide-react";
+import Link from "next/link";
 
 export default function CallToAction() {
   return (
@@ -19,9 +20,11 @@ export default function CallToAction() {
             <br />
             About You.
           </p>
-          <Button className="bg-[#F15A2B] hover:bg-[#d94d22] text-white rounded-full h-16 w-16 p-0">
-            <MessageCircle className="w-6 h-6" />
-          </Button>
+          <Link href="#home">
+            <Button className="bg-[#F15A2B] hover:bg-[#d94d22] text-white rounded-full h-16 w-16 p-0">
+              <MessageCircle className="w-6 h-6" />
+            </Button>
+          </Link>
         </div>
       </div>
     </section>

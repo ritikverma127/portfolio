@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { Shield } from "lucide-react";
+import Link from "next/link";
 
 export default function ExceptionalWork() {
   return (
@@ -9,33 +10,35 @@ export default function ExceptionalWork() {
 
       <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
         <div className="space-y-8">
-          <h2 className="text-4xl font-bold text-[#1E2B4F]">
-            Clients Get Always
-            <br />
-            Exceptional Works
-            <br />
-            From Me
-          </h2>
+          <h2 className="text-4xl font-bold text-[#1E2B4F]">Contact Us</h2>
           <p className="text-gray-600 max-w-sm">
-            Lorem ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem ipsum has been the industry.
+            Available for new projects and collaborations. Let's create
+            something amazing together.
           </p>
 
           <ul className="space-y-4">
             <li className="flex items-center gap-3">
               <span className="text-[#F15A2B] font-bold">1.</span>
               <span className="text-[#1E2B4F] font-semibold">
-                Top Quality Works
+                Email:- rv1338739@gmail.com
               </span>
             </li>
             <li className="flex items-center gap-3">
               <span className="text-[#F15A2B] font-bold">2.</span>
-              <span className="text-[#1E2B4F] font-semibold">Commitments</span>
+              <span className="text-[#1E2B4F] font-semibold">
+                Phone:- +91 6268135650
+              </span>
             </li>
             <li className="flex items-center gap-3">
               <span className="text-[#F15A2B] font-bold">3.</span>
               <span className="text-[#1E2B4F] font-semibold">
-                24 Hours active
+                LinkedIn:-
+                <Link
+                  href="https://www.linkedin.com/in/ritik-verma-1b311b22b"
+                  className="text-blue-500 hover:underline"
+                >
+                  www.linkedin.com
+                </Link>
               </span>
             </li>
           </ul>
