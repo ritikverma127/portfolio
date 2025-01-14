@@ -32,7 +32,7 @@ const Header = () => {
               href="#clients"
               className="text-sm hover:text-gray-600 transition-colors font-bold"
             >
-              Clients
+              Contact
             </Link>
 
             <Link
@@ -80,7 +80,7 @@ const Header = () => {
                 href="#clients"
                 className="text-2xl font-bold hover:text-gray-600 transition-colors px-4 py-2"
               >
-                Clients
+                Contact
               </Link>
               <Link
                 href="#projects"
