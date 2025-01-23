@@ -1,11 +1,8 @@
 "use client";
-import React, { useState } from "react";
-import { Menu, X } from "lucide-react";
+import React from "react";
 import Link from "next/link";
 
 const Header = () => {
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-
   return (
     <>
       {/* Desktop Header */}
