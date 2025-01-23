@@ -4,10 +4,10 @@ import { Button } from "@/components/ui/button";
 
 export default function Services() {
   const DownloadResume = () => {
-    const pdfUrl = "Ritik-Resume-127.pdf";
+    const pdfUrl = "Ritik Verma-2025.pdf";
     const link = document.createElement("a");
     link.href = pdfUrl;
-    link.download = "Ritik-Resume-127.pdf"; // specify the filename
+    link.download = "Ritik Verma-2025.pdf"; // specify the filename
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);

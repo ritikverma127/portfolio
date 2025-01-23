@@ -52,16 +52,16 @@ const Header = () => {
           <h1 className="text-xl font-semibold text-purple-600">
             Mr. Developer✨
           </h1>
-          <button
+          {/* <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             className="relative z-50"
           >
             {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
-          </button>
+          </button> */}
         </div>
 
         {/* Mobile Menu */}
-        {isMobileMenuOpen && (
+        {/* {isMobileMenuOpen && (
           <nav className="fixed  inset-0 bg-white z-40 flex justify-center items-center ">
             <div className="flex flex-col gap-6 items-center">
               <Link
@@ -90,7 +90,7 @@ const Header = () => {
               </Link>
             </div>
           </nav>
-        )}
+        )} */}
       </header>
     </>
   );
