@@ -65,7 +65,7 @@ export default function Hero() {
         </>
       )}
 
-      <div className="max-w-7xl mx-auto min-h-[calc(100vh-4rem)] flex flex-col lg:flex-row items-center justify-center gap-8 lg:gap-12 py-16 lg:py-20">
+      <div className="max-w-7xl mx-auto min-h-[calc(100vh-4rem)] flex flex-col lg:flex-row items-center justify-center gap-8 lg:gap-12 py-14 lg:pt-[8rem] lg:pb-[2rem]">
         {/* Left Content Section */}
         <div className="flex-1 space-y-6 lg:space-y-8 text-center lg:text-left">
           <h1 className="text-[#1E2B4F] text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight">
